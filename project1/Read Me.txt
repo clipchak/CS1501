@@ -1,0 +1,46 @@
+Cloth Cutting
+Colton Lipchak (cjl99)
+October 2018
+
+
+INSTALLATION
+
+The following files should be present:
+
+     TestDriver.java
+     Pattern.java
+     
+I created and changed these files and included them but was not able to use them to produce graphics:
+	Cloth.java
+	ClothCutter.java
+	Cut.java
+	TestClothCutter.java
+	TestGraphicsExample.java
+	Garment.java
+	Pattern.java
+
+USAGE
+
+Run the TestDriver program. Change the patterns with different widths, heights, values.
+The program will calculate and print out the optimal value from the set of patterns
+and maximum height and width using a bottom-up iterative method.
+
+Ex: 
+    ArrayList<Pattern> patterns = new ArrayList<Pattern>() ;
+    patterns.add(new Pattern(2,2,1,"A")) ;
+    patterns.add(new Pattern(2,6,4,"B")) ;
+    patterns.add(new Pattern(4,2,3,"C")) ;
+    patterns.add(new Pattern(5,3,5,"D")) ;
+    int width = 40 ;
+    int height = 25 ;
+    int pixels = 30 ;
+    initializeMemo(width,height,patterns);
+    System.out.println("Value of optimal layout: " + optimal(memo.length,memo[0].length,patterns));
+
+Produces 
+"Value of optimal layout: 370"
+
+
+PROBLEMS
+
+No graphics
